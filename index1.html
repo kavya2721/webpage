@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blue Lagoon Restaurant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Blue Lagoon Restaurant</h1>
+    <div class="rating" id="starRating"></div>
+  </header>
+
+  <main>
+    <section class="pool">
+      <h2>Central Pool</h2>
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" alt="Pool View" class="pool-image" />
+      <p>Relax by the shimmering waters while enjoying gourmet cuisine.</p>
+    </section>
+
+    <section class="menu">
+      <h2>Our Menu</h2>
+      <ul>
+        <li><strong>Grilled Salmon</strong> – ₹850</li>
+        <li><strong>Butter Chicken</strong> – ₹650</li>
+        <li><strong>Paneer Tikka</strong> – ₹500</li>
+        <li><strong>Caesar Salad</strong> – ₹400</li>
+        <li><strong>Chocolate Lava Cake</strong> – ₹300</li>
+      </ul>
+    </section>
+
+    <section class="booking">
+      <h2>Book a Table</h2>
+      <form id="bookingForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required />
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" required />
+
+        <label for="guests">Guests:</label>
+        <input type="number" id="guests" min="1" max="20" required />
+
+        <button type="submit">Reserve</button>
+      </form>
+      <p id="confirmation"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Blue Lagoon Restaurant. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+ 
